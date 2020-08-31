@@ -1,0 +1,52 @@
+  <div class="sidebar" style="width:25%">
+      <a href="javascript:void(0)"  onclick="loadContainer('home')" class="active" id="homeTab">Home</a>
+      <a href="javascript:void(0)" onclick="loadContainer('students')" class="" id="allStudents">Students</a>
+  <a href="javascript:void(0)" onclick="loadContainer('feedbacks')" class="" id="allFeedbacks">Feedbacks</a>
+</div>
+
+<div class="content" id="home">
+<h4 class="data">Total Number of Students:  {{totalStudents}}</h4>
+    <h4 class="data">Average Rating:  {{average}}</h4>
+    <h4 class="data">Total Amount:  {{totalAmount}}</h4>    
+</div>
+
+<div  class="content" id="students">
+  <br><br>
+  <h2 class="data" id="errorMessage" hidden>No students have registered yet.</h2>
+  <table id="studentsTable" class="data" cellspacing = "0px" cellpadding = "20px" text-align = "center">
+    <thead>
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+  </table>
+  <br><br>
+ <div style="width:20%;">
+ <button id="openFeedback" class="data">Open Feedback Form</button></div>
+</div>
+
+<div  class="content" id="feedbacks">
+   <br><br>
+  <h2 class="data" id="errorMessageFeedback" hidden>No students have given feedback yet.</h2>
+  <table id="feedbacksTable" class="data" cellspacing = "0px" cellpadding = "20px" text-align = "center">
+    <thead>
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Average Rating</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+  </table>
+  <br><br>
+  <div style="width: 20%;"><button id="pay" class="data">Pay Now</button></div>
+</div>
+
+<script src="../js/admin.js"></script>

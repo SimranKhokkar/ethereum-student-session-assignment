@@ -1,0 +1,49 @@
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <h3 id="feedbackFlagMessage" class="data" style="display:none; padding-left:10%">Feedback form has not been opened by the organizer yet. <br> Please try once the session is over</h3>
+  <form class="modal-content" id="feedbackForm">
+    <div class="container">
+      <h1>Student Feedback</h1>
+      <p>Please fill in this form to give your feedback regarding the session.</p>
+	  <p>Each parameter is to be rated out of 5</p>
+      <hr>
+	  <label for="knowledgeOfInstructor"><b>Knowledge of Instructor</b></label>
+      <input type="text" placeholder="Out of 5" name="knowledgeOfInstructor" id="knowledgeOfInstructor" required>
+
+      <label for="durationOfSession"><b>Duration of Session</b></label>
+      <input type="text" placeholder="Out of 5" name="durationOfSession" id="durationOfSession" required>
+
+      <label for="informationSharing"><b>Information Sharing (Instructor)</b></label>
+      <input type="text" placeholder="Out of 5" name="informationSharing" id="informationSharing" required>
+	
+      <label for="sessionContent"><b>Session Content</b></label>
+      <input type="text" placeholder="Out of 5" name="sessionContent" id="sessionContent" required>
+
+	  <label for="overallExperience"><b>Overall Experience</b></label>
+      <input type="text" placeholder="Out of 5" name="overallExperience" id="overallExperience" required>
+	  <label id="validationError" class="error"></label>
+
+      <label id="formError" class="error" for="error"></label>
+      <div class="clearfix">
+        <button type="button" id="clear" class="cancelbtn">Clear</button>
+        <button id="feedback" class="signupbtn">Submit Feedback</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="form-popup" id="login">
+  <form class="form-container" id="myForm">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button id="studentDetails" class="btn">Login</button>
+    <button  class="btn cancel">Close</button>
+  </form>
+</div>
+
+<script src="../js/feedback.js"></script>

@@ -34,7 +34,7 @@ const contract = web3.eth.contract(abi);
  */
 
  // if gas estimate is not provided, it takes some random value which might be more than the gas that is required
- contract.new('0x2a8ad8cb8f1cfbcae28dbe351a9b581cce28974a', {data: '0x' + bytecode, from: "0x15ccc38776d61c6d5a3ebf2237a70af5b070d52c", value: web3.toWei(50,'ether'), gas: gasEstimate+210000}, (err,res) => {
+ contract.new('***instructor_address****', {data: '0x' + bytecode, from: "****owner_address*****", value: web3.toWei(50,'ether'), gas: gasEstimate+210000}, (err,res) => {
 if(err) {
     console.log(err);
     return;

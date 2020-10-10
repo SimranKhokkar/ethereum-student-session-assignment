@@ -24,7 +24,7 @@ const gasEstimate = web3.eth.estimateGas({data: '0x' + bytecode });
 const contract = web3.eth.contract(abi);
 
 // unlock the local ethereum account with the duration for which the account should be unlocked
-// web3.personal.unlockAccount("0x15ccc38776d61c6d5a3ebf2237a70af5b070d52c", "", 5);
+// web3.personal.unlockAccount("****owner_address****", "", 5);
 
 /**
  * This function deploys Session.sol contract on blockcahin
